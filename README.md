@@ -1,6 +1,6 @@
 # aurora-serverless-and-elasticache
 
-Building a real-time leaderboard with Amazon Aurora Serverless and Amazon ElastiCache
+Building a real-time leaderboard with Amazon Aurora Serverless and Amazon ElastiCache.
 
 # Overview
 
