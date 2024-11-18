@@ -9,6 +9,8 @@ I used the following AWS tutorial as a guide for this project:
 
 ## Data
 
+```bash
+
 node scripts/testDatabase.js
 
 node scripts/fetchHighScoresForUser.js
@@ -21,16 +23,26 @@ node scripts/testRedis.js
 
 node scripts/loadRedis.js
 
-This script runs the ZREVRANGE command to fetch the top five scores from the overall leaderboard.
+```
+
+---
+
+
+``` bash
+
+# This script runs the ZREVRANGE command to fetch the top five scores from the overall leaderboard.
 node scripts/getTopOverallScores.js
 
+``
 
-Authentication
+```bash
+
+# Authentication
 
 curl -X GET ${BASE_URL}/users/ubecker
 
 
-register  a new user
+# register  a new user
 
 curl -X POST ${BASE_URL}/users \
   -H 'Content-Type: application/json' \
@@ -41,7 +53,7 @@ curl -X POST ${BASE_URL}/users \
 }'
 
 
-login-fetch credential
+# login-fetch credential
 
 curl -X POST ${BASE_URL}/login \
   -H 'Content-Type: application/json' \
@@ -55,9 +67,7 @@ curl -X POST ${BASE_URL}/login \
 export ID_TOKEN=
 
 
-
-
-add user score
+#add user score
 
 curl -X POST ${BASE_URL}/users/spencer \
  -H 'Content-Type: application/json' \
@@ -72,13 +82,13 @@ curl -X GET ${BASE_URL}/users/ubecker
 
 
 
-fetch top score
+# fetch top score
 curl -X GET ${BASE_URL}/users/spencer
 
 
 curl -X GET ${BASE_URL}/scores/2019-11-08
 
-
+```
 
 
 
